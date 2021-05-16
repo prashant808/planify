@@ -16,13 +16,23 @@
 			margin: 0px;
 			font-family: 'Goblin One', cursive;
 		}
+		
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-6 {width: 50%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
 
 	</style>
 </head>
 <body>
 		<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
   	<img src="https://i.pinimg.com/originals/34/67/5d/34675de1e40332d66a06f1d466eb1f09.jpg" style="height: 50px; width: 80px;">
     <h2 class="navbar-brand text-danger" href="#">AnimeWorld</h2>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,9 +48,7 @@
         </li>
       
          <li class=" nav-item dropdown p-1">
-         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-         Animes
-         </button>
+        <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Animies</a>
          <div class=" nav-item dropdown-menu">
          <a class="dropdown-item" href="#">Naruto</a>
          <a class="dropdown-item" href="#">Tokyo Goul</a>
@@ -53,6 +61,12 @@
   </div>
 </nav>
 </header>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active"><a href="#">Home</a></li>
+    <li class="breadcrumb-item " aria-current="page">ANIMIES</li>
+  </ol>
+</nav>
 <section class="p-4">
 <h2 class="text-secondary text-center">Animies that are  Available here</h2>
 <div class="row">
@@ -127,8 +141,8 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="https://www.gojinshi.com/wp-content/uploads/2020/07/Naruto-Shippuden-Filler-Episodes-List.jpg" alt="Naruto" width="1400" height="500">
-      <div class="carousel-caption">
-      <h3>Naruto</h3>
+      <div class="carousel-caption text-danger">
+      <h3>Naruto </h3>
   </div>
     </div>
     <div class="carousel-item">
@@ -138,12 +152,13 @@
     </div>
    </div> <div class="carousel-item">
       <img src="https://variety.com/wp-content/uploads/2020/04/one-punch-man.jpg" alt="Tokyo ghoul" width="1400" height="500">
-      <div class="carousel-caption text-primary">
+      <div class="carousel-caption text-danger">
       <h3>One punch man</h3>
     </div>
    </div> <div class="carousel-item">
       <img src="https://mpics.mgronline.com/pics/Images/564000000692301.JPEG" alt="Tokyo ghoul" width="1400" height="500">
-      <div class="carousel-caption text-primary">
+      <div class="carousel-caption text-danger">
+      	<h3>Death note</h3>
     </div>
    </div>
   
